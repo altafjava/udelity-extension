@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Udelity",
-  "description": "Download Udemy Videos",
+  "description": "Download Udemy enrolled courses, chapters, lectures, videos",
   "version": "0.0.1",
 
   "browser_action": {
@@ -17,20 +17,10 @@
     "scripts": ["background.js"],
     "persistent": true
   },
-  "permissions": ["activeTab", "storage", "tabs", "webRequest", "*://*.udemy.com/*"],
+  "permissions": ["webRequest", "*://*.udemy.com/*"],
   "content_scripts": [
     {
-      "matches": ["*://*.udemy.com/*"],
-      "js": ["content_script.js"]
-    },
-    {
-      "matches": [
-        "*://*.udemy.com/*",
-        "http://localhost:8080/",
-        "http://localhost:3000/",
-        "https://udelity-live.herokuapp.com/",
-        "https://www.udelity.in/"
-      ],
+      "matches": ["https://www.udelity.in/"],
       "js": ["installed_notifier.js"],
       "run_at": "document_idle"
     }
