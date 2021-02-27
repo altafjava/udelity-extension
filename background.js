@@ -3,7 +3,8 @@
   // const myWebsite = 'http://localhost:3000'
   // const myWebsite = 'http://localhost:8080'
   // const myWebsite = 'https://udelity.netlify.app'
-  const myWebsite = 'https://udelity-live.herokuapp.com'
+  // const myWebsite = 'https://udelity-live.herokuapp.com'
+  const myWebsite = 'https://www.udelity.in'
   let isMyWebsiteOpen = false
   let isRedirecting = false
   const tabStorage = {}
