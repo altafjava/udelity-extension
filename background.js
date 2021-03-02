@@ -25,4 +25,11 @@
     networkFilters,
     ['requestHeaders']
   )
+
+  if (!localStorage.getItem('hasExtensionInstalled')) {
+    window.localStorage.setItem('hasExtensionInstalled', true)
+    chrome.tabs.create({
+      url: myWebsite,
+    })
+  }
 })()

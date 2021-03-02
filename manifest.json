@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Udelity",
   "description": "Download Udemy enrolled courses, chapters, lectures, videos via udelity.in",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "browser_action": {
     "default_popup": "index.html",
     "default_title": "Open the popup"
